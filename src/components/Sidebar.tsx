@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 const sideItems = [
   {id: 1, to: '/dashboard', icon: <MdDashboard size={24} />, label: 'Dashboard' },
-  {id:2, to: '/Products', icon: <FiShoppingBag size={24} />, label: 'Products' },
+  {id:2, to: '/products', icon: <FiShoppingBag size={24} />, label: 'Products' },
   {id:3, to: '/orders', icon: <BiSolidNotepad size={24} />, label: 'Orders' },
   {id:4, to: '/customers', icon: <FaRegUser size={24} />, label: 'Customers' },
   {id:5, to: '/support', icon: <MdSupportAgent size={24} />, label: 'Support' },
@@ -32,7 +32,7 @@ const Sidebar = () => {
         </div>
         <ul className="flex-1 space-y-6 pt-6 text-gray-500">
             {sideItems.map((item)=>(
-                <NavLink key={item.id} to={item.to} className="flex items-center gap-4 px-3 ">
+                <NavLink key={item.id} to={item.to} className={({isActive})=> `flex items-center gap-4 px-3 ${isActive ? "bg-gray-300 text-black p-2 rounded-lg": ''}`} onClick={()=>setOpen(false)}>
                     <span>{item.icon}</span>
                     <h3 className={`text-lg ${open ? 'block' : 'hidden'} md:block`}>{item.label}</h3>
                 </NavLink>
