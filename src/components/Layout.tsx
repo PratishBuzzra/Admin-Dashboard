@@ -8,9 +8,9 @@ const Layout = () => {
     <div className="flex min-h-screen">
          
         <Sidebar />
-        <div className="flex-1 overflow-hidden ">
+        <div className="flex-1 ml-20 md:ml-64 overflow-hidden ">
             <Header />
-        <main className="flex-1 p-4 ">
+        <main className="flex-1   p-4 ">
            <Outlet />
         </main>
       </div>

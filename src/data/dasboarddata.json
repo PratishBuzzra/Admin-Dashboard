@@ -45,26 +45,28 @@
         "month": "Aug",
         "oneTime": 12500,
         "recurring": 25000
+    }
+],
+"topCategories": [
+    {
+        "category": "Smartphones",
+        "sales": 90000,
+        "percentage": 70
     },
     {
-        "month": "Sep",
-        "oneTime": 11000,
-        "recurring": 23000
+        "category": "Clothing",
+        "sales": 30000,
+        "percentage": 20
     },
     {
-        "month": "Oct",
-        "oneTime": 15000,
-        "recurring": 28000
+        "category": "Fitness Equipment",
+        "sales": 12000,
+        "percentage": 8
     },
     {
-        "month": "Nov",
-        "oneTime": 13000,
-        "recurring": 26000
-    },
-    {
-        "month": "Dec",
-        "oneTime": 12000,
-        "recurring": 24000
+        "category": "Furniture",
+        "sales": 6000,
+        "percentage": 4
     }
 ]
     

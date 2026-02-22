@@ -48,6 +48,7 @@ const SalesRevenueChart = () => {
 }
 const options: ChartOptions<'bar'> = {
     responsive: true,
+     maintainAspectRatio: false,
     plugins: {
         title: {
             display: true,
@@ -68,7 +69,7 @@ const options: ChartOptions<'bar'> = {
 
 }
   return (
-    <div>
+    <div className='relative h-full'>
       <Bar data={data} options={options}/>
     </div>
   )

@@ -5,6 +5,7 @@ import { BiSolidNotepad } from "react-icons/bi";
 import { MdAttachMoney } from "react-icons/md";
 import { CiCreditCard1 } from "react-icons/ci";
 import SalesRevenueChart from "../components/Dashboard/SalesRevenueChart";
+import CategoriesChart from "../components/Dashboard/CategoriesChart";
 const Dashboard = () => {
   const {summary} = dashboarddata
     const previousSummary = {
@@ -27,9 +28,11 @@ const Dashboard = () => {
          <DataCard title="Total Expenses" value={summary.totalExpenses} progress={calculateProgress(summary.totalExpenses, previousSummary.totalExpenses)}  icon={<CiCreditCard1 />}/>
       </div>
       <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="shadow-2xl p-4 rounded-xl bg-white">
+        <div className="shadow-2xl p-4 rounded-xl bg-white h-[50vh]">
         <SalesRevenueChart />
-
+        </div>
+        <div className="shadow-2xl p-4 rounded-xl bg-white h-[50vh]">
+          <CategoriesChart />
         </div>
       </div>
     </div>
