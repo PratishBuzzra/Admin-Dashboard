@@ -25,7 +25,7 @@ const Sidebar = () => {
             />
         )
     }
-    <aside className={`fixed top-0 left-0 bg-white h-screen shadow-lg transition-transform px-3 py-4 flex flex-col  ${open ? 'w-64' : 'w-20 '} md:w-64`}>
+    <aside className={`fixed top-0 left-0 bg-white h-screen shadow-lg transition-transform px-3 py-4 flex flex-col  ${open ? 'w-64' : 'w-20 '} md:w-64 z-50`}>
         <div className="flex items-center justify-between ">
             <h1 className={`text-xl font-bold ${open ? 'block' : 'hidden'} md:block`} >Admin Dashboard</h1>
             <button onClick={()=>setOpen(!open)} className="text-xl font-bold cursor-pointer md:hidden"> {open ? <IoMdClose />: <RiMenuFold3Fill size={24} className="ml-3"/> } </button>
