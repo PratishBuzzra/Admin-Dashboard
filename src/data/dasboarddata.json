@@ -4,5 +4,68 @@
         "totalSales": 20530,
         "totalIncome": 214765,
         "totalExpenses": 15678
+    },
+    "salesRevenue": [
+    {
+        "month": "Jan",
+        "oneTime": 12500,
+        "recurring": 28000
+    },
+    {
+        "month": "Feb",
+        "oneTime": 9500,
+        "recurring": 20000
+    },
+    {
+        "month": "Mar",
+        "oneTime": 13500,
+        "recurring": 24000
+    },
+    {
+        "month": "Apr",
+        "oneTime": 7500,
+        "recurring": 27000
+    },
+    {
+        "month": "May",
+        "oneTime": 10500,
+        "recurring": 22000
+    },
+    {
+        "month": "Jun",
+        "oneTime": 8000,
+        "recurring": 19000
+    },
+    {
+        "month": "Jul",
+        "oneTime": 17000,
+        "recurring": 32000
+    },
+    {
+        "month": "Aug",
+        "oneTime": 12500,
+        "recurring": 25000
+    },
+    {
+        "month": "Sep",
+        "oneTime": 11000,
+        "recurring": 23000
+    },
+    {
+        "month": "Oct",
+        "oneTime": 15000,
+        "recurring": 28000
+    },
+    {
+        "month": "Nov",
+        "oneTime": 13000,
+        "recurring": 26000
+    },
+    {
+        "month": "Dec",
+        "oneTime": 12000,
+        "recurring": 24000
     }
+]
+    
 }

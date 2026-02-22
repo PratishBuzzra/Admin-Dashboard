@@ -4,6 +4,7 @@ import { FiShoppingBag } from "react-icons/fi";
 import { BiSolidNotepad } from "react-icons/bi";
 import { MdAttachMoney } from "react-icons/md";
 import { CiCreditCard1 } from "react-icons/ci";
+import SalesRevenueChart from "../components/Dashboard/SalesRevenueChart";
 const Dashboard = () => {
   const {summary} = dashboarddata
     const previousSummary = {
@@ -18,12 +19,18 @@ const Dashboard = () => {
     return `${(diff >= 0 ? "+" : "")}${percentage}% increase`;
   };
   return (
-    <div>
+    <div className="p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <DataCard title="Total Products" value={summary.totalProducts} progress={calculateProgress(summary.totalProducts, previousSummary.totalProducts)} icon={<FiShoppingBag />}/>
          <DataCard title="Total Sales" value={summary.totalSales} progress={calculateProgress(summary.totalSales, previousSummary.totalSales)}  icon={<BiSolidNotepad />}/>
          <DataCard title="Total Income" value={summary.totalIncome} progress={calculateProgress(summary.totalIncome, previousSummary.totalIncome)}  icon={<MdAttachMoney />}/>
          <DataCard title="Total Expenses" value={summary.totalExpenses} progress={calculateProgress(summary.totalExpenses, previousSummary.totalExpenses)}  icon={<CiCreditCard1 />}/>
+      </div>
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="shadow-2xl p-4 rounded-xl bg-white">
+        <SalesRevenueChart />
+
+        </div>
       </div>
     </div>
   )
