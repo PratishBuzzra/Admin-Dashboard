@@ -4,15 +4,15 @@ const RecentActivities = () => {
      const {recentActivity} = dashboarddata
   return (
     <div className="shadow-2xl p-6 rounded-xl flex flex-col gap-3 bg-white">
-      <div className="flex items-center justify-between flex-wrap gap-4  ">
+      <div className="flex items-center justify-between flex-wrap gap-4">
        <h3 className="flex items-center gap-3 text-lg font-bold"><span><CiTimer size={24}/></span>Recent Activity</h3>
-       <button className="border border-gray-300 px-2 py-1 rounded ">SeeAll</button>
+       <button className="border text-sm border-gray-300 px-2 py-1 rounded ">SeeAll</button>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 py-4">
       
            {
             recentActivity.map((item)=>(
-                <div key={item.id} className="flex justify-between items-center border border-gray-300 px-4 py-3 rounded-xl flex-wrap text-sm gap-4 shadow-lg">
+                <div key={item.id} className="flex justify-between items-center border border-gray-300 p-4 rounded-xl flex-wrap text-sm gap-4 shadow-lg">
                 <div className="flex flex-col flex-wrap gap-1">
                     <p>{item.title}</p>
                     <p className="text-xs">{item.subtitle}  <span className=" text-gray-500">{item.date}</span></p>
