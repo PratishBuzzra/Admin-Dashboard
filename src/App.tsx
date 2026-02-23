@@ -5,6 +5,7 @@ import Products from "./pages/Products"
 import Orders from "./pages/Orders"
 import Customers from "./pages/Customers"
 import Support from "./pages/Support"
+import Login from "./pages/Login"
 
 
 
@@ -14,12 +15,14 @@ const App = () => {
    
     
       <Routes>
-        <Route path="/" element={<Layout />}>
+         <Route path='/' element={<Login />}/>
+        <Route element={<Layout />}>
         <Route path='/dashboard' element={<Dashboard />}/>
          <Route path='/products' element={<Products />}/>
           <Route path='/orders' element={<Orders />}/>
            <Route path='/customers' element={<Customers />}/>
            <Route path='/support' element={<Support />}/>
+           
         </Route>
       </Routes>
   
