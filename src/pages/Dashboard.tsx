@@ -7,6 +7,7 @@ import { CiCreditCard1 } from "react-icons/ci";
 import SalesRevenueChart from "../components/Dashboard/SalesRevenueChart";
 import CategoriesChart from "../components/Dashboard/CategoriesChart";
 import RecentActivities from "../components/Dashboard/RecentActivities";
+import TopProductTable from "../components/Dashboard/TopProductTable";
 const Dashboard = () => {
   const {summary} = dashboarddata
     const previousSummary = {
@@ -40,8 +41,8 @@ const Dashboard = () => {
         <div>
           <RecentActivities />
         </div>
-        <div className="lg:col-span-2">
-          <RecentActivities />
+        <div className="lg:col-span-2 ">
+          <TopProductTable />
         </div>
       </div>
     </div>

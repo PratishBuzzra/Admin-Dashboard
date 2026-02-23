@@ -102,6 +102,48 @@
         "date": "2026-02-10",
         "status": "Reviewed"
     }
+],
+"topProducts": [
+    {
+        "id": 1,
+        "name": "Adidas Ultraboost 23",
+        "stock": 1800,
+        "price": 180,
+        "sales": 1500,
+        "earnings": 270000
+    },
+    {
+        "id": 2,
+        "name": "Apple Watch Series 8",
+        "stock": 650,
+        "price": 350,
+        "sales": 1200,
+        "earnings": 420000
+    },
+    {
+        "id": 3,
+        "name": "Dyson V15 Detect Vacuum",
+        "stock": 800,
+        "price": 699,
+        "sales": 700,
+        "earnings": 489300
+    },
+    {
+        "id": 4,
+        "name": "Nike Air Max 90",
+        "stock": 2500,
+        "price": 98,
+        "sales": 2200,
+        "earnings": 215600
+    },
+    {
+        "id": 5,
+        "name": "Classic Notebook",
+        "stock": 5000,
+        "price": 25,
+        "sales": 4000,
+        "earnings": 100000
+    }
 ]
     
 }
