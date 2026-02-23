@@ -68,6 +68,40 @@
         "sales": 6000,
         "percentage": 4
     }
+],
+"recentActivity": [
+    {
+        "id": 1,
+        "type": "order",
+        "title": "Order #2005",
+        "subtitle": "Pratish Bajracharya",
+        "date": "2026-01-01",
+        "status": "New Order"
+    },
+    {
+        "id": 2,
+        "type": "alert",
+        "title": "Low Stock Alert",
+        "subtitle": "MacBook Pro M4",
+        "date": "2026-01-10",
+        "status": "Low Stock"
+    },
+    {
+        "id": 3,
+        "type": "promo",
+        "title": "Promo Code \"Winter20\"",
+        "subtitle": "Applied 52 times",
+        "date": "2026-01-20",
+        "status": "Campaign"
+    },
+    {
+        "id": 4,
+        "type": "feedback",
+        "title": "Customer Feedback",
+        "subtitle": "Survey Completed",
+        "date": "2026-02-10",
+        "status": "Reviewed"
+    }
 ]
     
 }

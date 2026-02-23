@@ -1,6 +1,5 @@
 
 import type { ReactNode } from "react";
-
 interface DataCardProps {
     title: string;
     value: number | string;

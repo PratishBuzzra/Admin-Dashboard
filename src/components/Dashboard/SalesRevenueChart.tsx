@@ -69,7 +69,7 @@ const options: ChartOptions<'bar'> = {
 
 }
   return (
-    <div className='relative h-full'>
+    <div className='relative h-full '>
       <Bar data={data} options={options}/>
     </div>
   )

@@ -6,6 +6,7 @@ import { MdAttachMoney } from "react-icons/md";
 import { CiCreditCard1 } from "react-icons/ci";
 import SalesRevenueChart from "../components/Dashboard/SalesRevenueChart";
 import CategoriesChart from "../components/Dashboard/CategoriesChart";
+import RecentActivities from "../components/Dashboard/RecentActivities";
 const Dashboard = () => {
   const {summary} = dashboarddata
     const previousSummary = {
@@ -27,12 +28,20 @@ const Dashboard = () => {
          <DataCard title="Total Income" value={summary.totalIncome} progress={calculateProgress(summary.totalIncome, previousSummary.totalIncome)}  icon={<MdAttachMoney />}/>
          <DataCard title="Total Expenses" value={summary.totalExpenses} progress={calculateProgress(summary.totalExpenses, previousSummary.totalExpenses)}  icon={<CiCreditCard1 />}/>
       </div>
-      <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="shadow-2xl p-4 rounded-xl bg-white h-[50vh]">
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="shadow-2xl p-4 rounded-xl bg-white h-[50vh] lg:col-span-2">
         <SalesRevenueChart />
         </div>
         <div className="shadow-2xl p-4 rounded-xl bg-white h-[50vh]">
           <CategoriesChart />
+        </div>
+      </div>
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div>
+          <RecentActivities />
+        </div>
+        <div className="lg:col-span-2">
+          <RecentActivities />
         </div>
       </div>
     </div>
