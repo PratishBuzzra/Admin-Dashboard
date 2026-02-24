@@ -47,7 +47,7 @@ const Login = () => {
             email: "pratish@gmail.com",
             password: "12345678",
             role: "admin",
-            name: "Pratish"
+            name: "Pratish Bajracharya"
         }
         if(data.email === admin.email && data.password === admin.password){
             login(admin)

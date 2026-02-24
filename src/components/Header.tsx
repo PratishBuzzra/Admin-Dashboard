@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="shadow-lg px-4 md:px-8 py-4 md:py-5 ">
       <div className="flex flex-col md:flex-row justify-between items-center">
-        <h2 className="md:text-xl text-lg font-bold md:mb-0 mb-2">Welcome Back {user?.name}</h2>
+        <h2 className="md:text-xl text-lg font-bold md:mb-0 mb-2">Welcome Back {user?.name.split(" ")[0]}</h2>
         <div className="flex items-center gap-6">
             <div className="flex gap-6 md:text-xl text-lg">
             <button><CiDark size={28}/></button>
