@@ -17,7 +17,7 @@ const sideItems = [
   {id:5, to: '/support', icon: <MdSupportAgent size={24} />, label: 'Support' },
 ];
 const Sidebar = () => {
-    const [open, setOpen] = useState<boolean>(true)
+    const [open, setOpen] = useState<boolean>(false)
     const {user} = useContext(AuthContext)!
   return (
     <>
