@@ -19,12 +19,17 @@ interface AuthProviderProps {
 }
  const AuthContext = createContext<AuthContextProps | null>(null);
 export const AuthProvider = ({children}:AuthProviderProps)=>{
-    const [user, setUser] = useState<User | null>(null);
+    const [user, setUser] = useState<User | null>(()=>{
+        const storedUser = localStorage.getItem("userData");
+        return storedUser ? JSON.parse(storedUser) : null;
+    });
     const login = (userData: User)=>{
         setUser(userData);
+        localStorage.setItem("userData", JSON.stringify(userData))
     }
     const logout = ()=>{
-        setUser(null)
+        setUser(null);
+        localStorage.removeItem("userData")
     }
     const isAuthenticated = !!user
 
