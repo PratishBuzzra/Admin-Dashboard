@@ -23,7 +23,7 @@ const TopProductTable = () => {
                 <tbody>
                     {
                         topProducts.map((item)=>(
-                            <tr className="border-b border-gray-400 hover:bg-gray-100 transition">
+                            <tr key={item.id} className="border-b border-gray-400 hover:bg-gray-100 transition">
                                 <td className="py-5">{item.name}</td>
                                 <td>{item.stock}</td>
                                 <td>{item.price}</td>
