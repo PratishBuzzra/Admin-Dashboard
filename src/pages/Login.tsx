@@ -63,6 +63,11 @@ const Login = () => {
             </div>
             <button className="w-full bg-black text-white py-2 mt-3 rounded hover:bg-gray-500">Login</button>
         </form>
+        <div className="mt-4 text-sm text-center text-gray-500">
+  <p>Demo Credentials:</p>
+  <p>Email: pratish@gmail.com</p>
+  <p>Password: 12345678</p>
+</div>
        </div>
     </div>
   )

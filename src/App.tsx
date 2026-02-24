@@ -6,6 +6,7 @@ import Orders from "./pages/Orders"
 import Customers from "./pages/Customers"
 import Support from "./pages/Support"
 import Login from "./pages/Login"
+import ProtectedRoute from "./routes/ProtectedRoute"
 
 
 
@@ -16,7 +17,7 @@ const App = () => {
     
       <Routes>
          <Route path='/' element={<Login />}/>
-        <Route element={<Layout />}>
+        <Route element={ <ProtectedRoute role="admin"><Layout /></ProtectedRoute>}>
         <Route path='/dashboard' element={<Dashboard />}/>
          <Route path='/products' element={<Products />}/>
           <Route path='/orders' element={<Orders />}/>
