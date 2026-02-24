@@ -1,12 +1,14 @@
 import { MdDashboard } from "react-icons/md";
 import { FiShoppingBag } from "react-icons/fi";
 import { BiSolidNotepad } from "react-icons/bi";
-import { FaRegUser, FaUserCircle } from "react-icons/fa";
+import { FaRegUser} from "react-icons/fa";
 import { MdSupportAgent } from "react-icons/md";
 import { RiMenuFold3Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import AuthContext from "../context/authContext";
+import pratishimg from "/pb.jpg"
 const sideItems = [
   {id: 1, to: '/dashboard', icon: <MdDashboard size={24} />, label: 'Dashboard' },
   {id:2, to: '/products', icon: <FiShoppingBag size={24} />, label: 'Products' },
@@ -16,7 +18,7 @@ const sideItems = [
 ];
 const Sidebar = () => {
     const [open, setOpen] = useState<boolean>(true)
-
+    const {user} = useContext(AuthContext)!
   return (
     <>
     {
@@ -39,8 +41,11 @@ const Sidebar = () => {
             ))}
         </ul>
         <div className="flex px-3 py-2 items-center gap-4 ">
-            <span><FaUserCircle size={24}/></span>
-            <h3 className={`font-bold text-xl ${open ? 'block' : 'hidden'} md:block` }>My Profile</h3>
+            <img src={pratishimg}  className={`${open ? "w-12 h-12" : "w-8 h-8"} md:w-12 md:h-12 object-cover rounded-full`} alt={user?.name} />
+            <div className="flex flex-col  ">
+            <h3 className={`font-semibold text-xl ${open ? 'block' : 'hidden'} md:block` }>{user?.name}</h3>
+            <span className={`text-xs leading-3 text-gray-600 ${open ? 'block' : 'hidden'} md:block`}>Developer</span>
+            </div>
         </div>
       
     </aside>
