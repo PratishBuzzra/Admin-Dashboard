@@ -43,8 +43,8 @@ const Sidebar = () => {
         <div className="flex px-3 py-2 items-center gap-4 ">
             <img src={pratishimg}  className={`${open ? "w-12 h-12" : "w-8 h-8"} md:w-12 md:h-12 object-cover rounded-full`} alt={user?.name} />
             <div className="flex flex-col  ">
-            <h3 className={`font-semibold text-xl ${open ? 'block' : 'hidden'} md:block` }>{user?.name}</h3>
-            <span className={`text-xs leading-3 text-gray-600 ${open ? 'block' : 'hidden'} md:block`}>Developer</span>
+            <h3 className={`font-semibold text-xl leading-6 ${open ? 'block' : 'hidden'} md:block` }>{user?.name}</h3>
+            <span className={`text-xs leading-4 text-gray-600 ${open ? 'block' : 'hidden'} md:block`}>Developer</span>
             </div>
         </div>
       
