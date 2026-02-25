@@ -22,7 +22,7 @@ const Header = () => {
   }
  }, []);
   return (
-    <header className="fixed w-full bg-white z-50 shadow-lg px-4 md:px-8 py-4 md:py-5 ">
+    <header className="fixed top-0 w-full bg-white z-40 shadow-lg px-4 md:px-8 py-4 md:py-5 ">
       <div className="flex flex-col md:flex-row justify-between items-center mr-15 md:mr-0">
         <h2 className="md:text-xl font-bold md:mb-0 mb-2">Welcome Back {user?.name.split(" ")[0]}</h2>
         <div className="flex items-center gap-6 md:mr-60">
