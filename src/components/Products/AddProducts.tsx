@@ -5,9 +5,7 @@ const AddProducts = () => {
     <div>
         <form action="">
             <div>
-                <input type="text" />
-                <input type="text" />
-                <button>Hello</button>
+                <h1>Working on it</h1>
             </div>
         </form>
       
