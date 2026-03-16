@@ -2,8 +2,30 @@ import { RiAlignItemHorizontalCenterFill } from "react-icons/ri";
 import ProductData from "../../data/ProductsData.json"
 import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
+import Pagination from "../Pagination";
+import { useState } from "react";
 const ProductTable = () => {
     const {products} = ProductData
+    const [currentPage, setCurrentPage] = useState(1)
+    const productPerPage = 5;
+    const totalPages = Math.ceil(products.length / productPerPage);
+    const indexOfLastProduct = currentPage * productPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+    const currentProduct = products.slice(indexOfFirstProduct, indexOfLastProduct)
+
+    const handlePrevPage = ()=>{
+        if(currentPage > 1){
+
+            setCurrentPage((prev)=>prev-1)
+        }
+    }
+    
+    const handleNextPage = ()=>{
+        if(currentPage < totalPages){
+
+            setCurrentPage((prev)=>prev+1)
+        }
+    }
   return (
     <div className="bg-white shadow-2xl p-6 rounded-xl flex flex-col gap-3 h-full border border-gray-300">
            <div>
@@ -24,10 +46,10 @@ const ProductTable = () => {
                         </thead>
                     <tbody>
                         {
-                            products.map((item)=>(
+                            currentProduct.map((item)=>(
                                 <tr key={item.id} className="border-b border-gray-400 hover:bg-gray-100 transition">
                                    
-                                    <td className="py-4 flex items-center gap-3">
+                                    <td className="p-4 flex items-center gap-3">
                                         <img className="w-10 h-10 rounded-lg object-cover" src={item.image} alt={item.image} />
                                         <p className="font-semibold">{item.name}</p>
                                         </td>
@@ -44,6 +66,7 @@ const ProductTable = () => {
                         }
                     </tbody>
                 </table>
+                <Pagination handlePrevPage={handlePrevPage} currentPage={currentPage} handleNextPage={handleNextPage} totalPages={totalPages}/>
             </div>
             
         </div>
