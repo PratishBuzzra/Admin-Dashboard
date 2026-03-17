@@ -13,7 +13,6 @@
       "category": "Accessories",
       "price": 89,
       "stock": 0,
-      "rating": 4.2,
       "status": "out_of_stock",
       "image": "/Products/smartwatch.jpg",
       "createdAt": "2024-11-18"
@@ -24,7 +23,6 @@
       "category": "Accessories",
       "price": 67,
       "stock": 0,
-      "rating": 4.0,
       "status": "out_of_stock",
       "image": "/Products/airpods.jpg",
       "createdAt": "2024-11-18"
@@ -35,7 +33,6 @@
       "category": "Clothing",
       "price": 150,
       "stock": 12,
-      "rating": 4.8,
       "status": "active",
       "image": "/Products/jacket.jpg",
       "createdAt": "2024-10-05"
@@ -46,7 +43,6 @@
       "category": "Clothing",
       "price": 350,
       "stock": 12,
-      "rating": 3.8,
       "status": "active",
       "image": "/Products/joggers.jpg",
       "createdAt": "2024-10-05"
@@ -57,7 +53,6 @@
       "category": "Fitness Equipment",
       "price": 500,
       "stock": 7,
-      "rating": 4.6,
       "status": "low stock",
       "image": "/Products/treadmill.jpg",
       "createdAt": "2024-12-01"
@@ -68,7 +63,6 @@
       "category": "Fitness Equipment",
       "price": 100,
       "stock": 50,
-      "rating": 4.4,
       "status": "active",
       "image": "/Products/dumbbells.jpg",
       "createdAt": "2024-11-15"
@@ -79,7 +73,6 @@
       "category": "Fitness Equipment",
       "price": 30,
       "stock": 100,
-      "rating": 4.7,
       "status": "active",
       "image": "/Products/yogamat.jpg",
       "createdAt": "2024-10-30"
@@ -90,7 +83,6 @@
       "category": "Smartphones",
       "price": 800,
       "stock": 30,
-      "rating": 4.9,
       "status": "active",
       "image": "/Products/smartphone-x.jpg",
       "createdAt": "2024-11-01"
@@ -101,7 +93,6 @@
       "category": "Smartphones",
       "price": 600,
       "stock": 25,
-      "rating": 4.5,
       "status": "active",
       "image": "/Products/poco.jpg",
       "createdAt": "2024-10-15"
@@ -112,7 +103,6 @@
       "category": "Smartphones",
       "price": 450,
       "stock": 6,
-      "rating": 4.3,
       "status": "low stock",
       "image": "/Products/samsung.jpg",
       "createdAt": "2024-09-30"
@@ -123,7 +113,6 @@
   "category": "Accessories",
   "price": 45,
   "stock": 20,
-  "rating": 4.6,
   "status": "active",
   "image": "/Products/sunglasses.jpg",
   "createdAt": "2024-12-05"
@@ -134,7 +123,6 @@
   "category": "Clothing",
   "price": 220,
   "stock": 18,
-  "rating": 4.7,
   "status": "active",
   "image": "/Products/leatherboots.jpg",
   "createdAt": "2024-12-01"

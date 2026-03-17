@@ -2,14 +2,16 @@ import { useState } from "react"
 import ConstantHeader from "../ConstantHeader"
 import AddProducts from "./AddProducts"
 
-
-const ProductHeader = () => {
+interface ProductHeaderProps {
+  setProducts: React.Dispatch<React.SetStateAction<any>>
+}
+const ProductHeader = ({setProducts}:ProductHeaderProps) => {
     const [open, setOpen] = useState(false)
   return (
     <div>
         <ConstantHeader headerTitle="Products" headerText="Manage your Products" btnText="Add Product" onClick={()=>setOpen(true)}/>
         {open && (
-            <AddProducts/>
+            <AddProducts setOpen={setOpen} setProducts={setProducts}/>
         )}
     </div>
   )

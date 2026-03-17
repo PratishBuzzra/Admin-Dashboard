@@ -1,11 +1,15 @@
 import { RiAlignItemHorizontalCenterFill } from "react-icons/ri";
-import ProductData from "../../data/ProductsData.json"
+
 import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 import Pagination from "../Pagination";
 import { useState } from "react";
-const ProductTable = () => {
-    const {products} = ProductData
+import {type Product } from "../../pages/Products"
+
+interface ProductTableProps {
+  products: Product[]
+}
+const ProductTable = ({products}:ProductTableProps) => {
     const [currentPage, setCurrentPage] = useState(1)
     const productPerPage = 5;
     const totalPages = Math.ceil(products.length / productPerPage);
